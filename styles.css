@@ -47,7 +47,7 @@ body {
     min-height: 5rem;
     padding: 1rem;
     justify-content: space-between;
-
+    align-items: center;
     background-color: var(--Satured-Dark-grayish-blue);
 
 }
@@ -66,14 +66,14 @@ header div h2 {
 
 header nav {
     width: 30%;
-
-   
+    /* justify-content: left; */
+    /* background-color: bisque; */
 }
 
 .nav-bar ul {
     display: flex;
     justify-content: space-between;
-  
+
 }
 
 li {
@@ -90,12 +90,12 @@ li {
     color: var(--Very-dark-desaturated-blue);
     text-decoration: none;
 
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
 }
 
-.container section{
-    margin: 4rem 3rem 3rem 3rem ;
-    
+.container section {
+    margin: 4rem 3rem 3rem 3rem;
+
 }
 
 .form-search {
@@ -105,16 +105,16 @@ li {
     gap: 2rem;
     padding: 2rem;
 
-   
+
 }
 
-.form-search h2{
+.form-search h2 {
     font-size: 2rem;
     color: var(--Very-dark-desaturated-blue);
     /* text-transform: uppercase; */
 }
 
-#email{
+#email {
     display: block;
     min-width: 35rem;
     height: 3rem;
@@ -123,7 +123,7 @@ li {
     border: none;
 }
 
-#submit{
+#submit {
     display: block;
     margin: 0 auto;
     margin-top: 1rem;
@@ -139,14 +139,14 @@ li {
     cursor: pointer;
 }
 
-.presentation{
+.presentation {
     /* background-color: bisque; */
     display: flex;
     border-radius: 1.5rem;
-    background: linear-gradient(0.25turn, var(--White) 39% ,var(--Light-grayish-blue), var(--Satured-Dark-grayish-blue));
+    background: linear-gradient(0.25turn, var(--White) 39%, var(--Light-grayish-blue), var(--Satured-Dark-grayish-blue));
 }
 
-.presentation div{
+.presentation div {
     width: 50%;
     margin: 2rem;
 
@@ -154,7 +154,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 
 
     overflow: hidden;
@@ -169,44 +169,44 @@ li {
     overflow: hidden;
 } */
 
-.images-description-and-logo img{
-    width: 50rem;
+.images-description-and-logo img {
+    width: 80%;
     height: 20rem;
 
-    
+
 }
 
-.types-car{
+.types-car {
     /* background-color: aqua; */
     gap: 2rem;
     overflow: hidden;
 
 }
 
-.types-car img{
-    width: 60rem;
+.types-car img {
+    width: 85%;
     height: 60%;
 }
 
-.types-car h3{
+.types-car h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--Very-dark-grayish-blue);
 }
 
-.types-car p{
+.types-car p {
     width: 80%;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--Dark-grayish-blue);
 }
 
-.blog-mini{
+.blog-mini {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 
-  
+
     justify-content: center;
     align-items: center;
 
@@ -214,45 +214,45 @@ li {
     /* background-color: aqua; */
 }
 
-.blog-mini h3{
+.blog-mini h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--Very-dark-grayish-blue);
 }
 
-.blog-mini h3 a{
+.blog-mini h3 a {
     color: var(--Dark-grayish-blue);
 }
 
-.blog-mini iframe{
-   
+.blog-mini iframe {
+
     width: 51rem;
     height: 31rem;
 }
 
-.mini-shop{
+.mini-shop {
     display: flex;
     flex-direction: column;
     place-items: center;
-    gap:1rem;
+    gap: 1rem;
 }
 
-.mini-shop h3{
+.mini-shop h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--Very-dark-desaturated-blue);
 }
 
-.shop-container{
+.shop-container {
     width: 100%;
     display: flex;
     /* justify-content: space-between; */
     /* background-color: bisque; */
 }
 
-.items-shop{
+.items-shop {
     width: 40rem;
-    margin:2rem;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -261,37 +261,39 @@ li {
     /* background-color: aqua; */
 }
 
-.items-shop p{
+.items-shop p {
     width: 90%;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--Dark-grayish-blue);
     text-align: center;
     margin: 1.5rem 0;
 }
 
-.items-shop h4{
+.items-shop h4 {
     width: 95%;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.icon-car{
+.icon-car {
     width: 8rem;
     height: 8rem;
-    
+
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
-   
 }
+
+
 
 @media only screen and (max-width:37.5rem) {
     .header {
-        width: 35rem;
+        width: 100%;
         /* background-color: red; */
         justify-content: space-between;
+        align-items: center;
     }
 
     header div h2 {
@@ -322,5 +324,118 @@ li {
     .nav-bar ul li a {
         font-size: 1rem;
         letter-spacing: 0;
+    }
+
+    .form-search {
+        width: 30rem;
+        overflow: hidden;
+        justify-content: center;
+        /* background-color: bisque; */
+    }
+
+    .form-search h2 {
+        font-size: 1.2rem;
+
+    }
+
+
+    #email {
+        min-width: 20rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+
+    }
+
+    #submit {
+
+
+        min-width: 10rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+    }
+
+    .presentation {
+        flex-direction: column;
+        place-items: center;
+
+        background: linear-gradient(var(--White) 39%, var(--Light-grayish-blue), var(--Satured-Dark-grayish-blue));
+
+
+    }
+
+    .presentation div {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .images-description-and-logo img {
+        width: 80%;
+        height: 10rem;
+    }
+
+    .types-car img {
+        width: 80%;
+
+    }
+
+    .types-car h3 {
+        font-size: 1.5rem;
+    }
+
+    .types-car p {
+        width: 75%;
+        font-size: 1.2rem;
+
+    }
+
+    .blog-mini {
+        padding: 0;
+    }
+
+    .blog-mini h3 {
+        font-size: 1.4rem;
+    }
+
+    .blog-mini iframe {
+        width: 90%;
+        height: 15rem;
+    }
+
+    .shop-container {
+        flex-direction: column;
+    }
+
+    .items-shop {
+        width: 90%;
+    }
+
+
+    .mini-shop h3 {
+        font-size: 1.5rem;
+    }
+
+    .items-shop p{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .items-shop h4{
+        font-size: 1.4rem;
+    }
+
+    .icon-car{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width:76.8rem) {
+
+    header nav {
+        width: 50%;
+        /* background-color: bisque; */
     }
 }
